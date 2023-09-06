@@ -1,0 +1,23 @@
+#root form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tablero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tablero p {
+    margin-right: 5px;
+}
+.tablero input {
+    margin-right: 5px;
+}
+
+.error{
+    background-color: red;
+}

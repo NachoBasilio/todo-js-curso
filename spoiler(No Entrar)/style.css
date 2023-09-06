@@ -13,6 +13,7 @@ body{
 h1{
     text-align: center;
     font-size: 3rem;
+    background-color: #fef6cd;
 }
 
 #root form{
@@ -26,7 +27,6 @@ form input{
 }
 
 .tablero{
-    background-color: brown;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -40,18 +40,23 @@ form input{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: aqua;
-    margin: 0 auto;
-    padding: 0 5px;
-    width: 50%;
+    background-color: #9dc09d;
+    margin: 5px auto;
+    padding: 0 10px;
+    width: 80%;
 
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
 }
 
 
 .tablero p {
     display: block;
-    width: 30%;
+    width: 40%;
     overflow-x:hidden ;
+    font-size: 1.2rem;
+    margin-left: 10px;
 }
 
 
@@ -62,9 +67,30 @@ form input{
 
 
 .tablero input {
-    margin-right: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    border: 2px solid #007bff;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #fff;
 }
 
-.error{
-    background-color: red;
+
+
+#error {
+  background-color: #f50400;
+  color: #fff;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
 }
+
+#error p {
+  font-size: 1.1rem;
+}
+
+#error.mostrar {
+    opacity: 1;
+  }

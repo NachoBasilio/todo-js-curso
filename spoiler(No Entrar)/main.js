@@ -30,18 +30,20 @@ const funcionParaElEvento = (e)=>{
     const valorCategorias = e.target[1]
 
     if(formulario.firstChild.id == "error"){
+        
         formulario.removeChild(formulario.firstChild)
+        
     }
     
 
     if(valorNombre.value.length < 3) {
         formulario.prepend(errorNodo("Nombre muy pequeño"))
-        
+        document.getElementById('error').classList.add('mostrar');
         return
     }
     if(valorCategorias.value.length < 3) {
         formulario.prepend(errorNodo("Categoria muy pequeño"))
-        
+        document.getElementById('error').classList.add('mostrar');
         return
     }
 

@@ -2,7 +2,7 @@ const root = document.getElementById("root")
 
 
 //Funcion creadora de formularios
-const funcionCreadoraDeFormulario =(inputs, callback)=>{
+const funcionCreadoraDeFormulario = (inputs, callback)=>{
     const formularioContenedor = document.createElement("form")
     const botonFormulario = document.createElement("button")
 

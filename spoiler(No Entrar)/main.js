@@ -14,6 +14,7 @@ const funcionCreadoraDeFormulario = (inputs, callback)=>{
     }
 
     botonFormulario.innerText = "Enviar"
+    botonFormulario.classList.add("Boton")
     formularioContenedor.appendChild(botonFormulario)
 
     formularioContenedor.addEventListener("submit", callback)
@@ -73,6 +74,15 @@ const funcionQueCreaNodos = (nombre, categoria)=>{
     const checkBox = document.createElement("input")
     checkBox.type = "checkbox"
 
+    checkBox.addEventListener("change", () => {
+        if (checkBox.checked) {
+          nombreNodo.classList.add("Terminado");
+          categoriaNodo.classList.add("Terminado");
+        } else {
+            nombreNodo.classList.remove("Terminado");
+            categoriaNodo.classList.remove("Terminado");
+        }
+      })
     nombreNodo.innerText = nombre
     categoriaNodo.innerText = categoria
 
@@ -105,9 +115,6 @@ tablero.classList.add("tablero")
 
 //Formulario
 const formulario = funcionCreadoraDeFormulario(["Nombre", "Categoria"], funcionParaElEvento)
-
-
-
 
 
 

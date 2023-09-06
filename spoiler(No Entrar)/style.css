@@ -46,7 +46,7 @@ form input{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #9dc09d;
+    background-color: #c0eac0;
     margin: 5px auto;
     padding: 0 10px;
     width: 80%;
@@ -62,7 +62,12 @@ form input{
     width: 40%;
     overflow-x:hidden ;
     font-size: 1.2rem;
-    margin-left: 10px;
+    margin-left: 30px;
+}
+
+.Terminado{
+    text-decoration: line-through;
+    color: #333;
 }
 
 
@@ -71,18 +76,44 @@ form input{
 }
 
 
-
 .tablero input {
     margin-right: 20px;
     cursor: pointer;
-    border: 2px solid #007bff;
+    border: 2px solid #020202;
     width: 20px;
     height: 20px;
     border-radius: 3px;
     background-color: #fff;
 }
 
+.Boton {
+    margin: 20px auto;
+    border: none;
+    background-color: #fef6cd;
+    padding: 10px 20px; 
+    font-size: 1.3rem;
+    border-radius: 5%;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    cursor: pointer; 
+  }
+  
+.Boton:hover {
+    background-color: #c0eac0;
+    color: #333; 
+}
+  
+.github{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    margin: 10px;
+}
 
+.github a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+}
 
 #error {
   background-color: #f50400;
